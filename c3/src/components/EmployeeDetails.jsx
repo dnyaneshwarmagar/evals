@@ -12,21 +12,24 @@ export const EmployeeDetails = () => {
       setUser(data)
     })
   },[])
-  console.log("user:",user)
+  
+
   return (
     <div className="user_details">
       <img src={user.image} className="user_image" />
       <h4 className="user_name">{user.employee_name}</h4>
       <span className="user_salary">$ {user.salary} </span>
-      <span className="tasks">
-        <li className="task"></li>
+      <span className="tasks" >Tasks: 
+        {user.tasks?.map( (el)=>(<li className="task">{el}</li>))}
+        
       </span>
       Status: <b className="status">{user.status}</b>
       Title: <b className="title">{user.title}</b>
       {/* Show this button only if user is not already terminated (users status is working) */}
-      <button className="fire">Fire Employee</button>
+      {user.status=== "terminated"?null:<button className="fire">Fire Employee</button>}
       {/* Show this button only if user is not already team lead or terminated */}
-      <button className="promote">promote</button>
+      {(user.title=== "Team Lead" ||user.status=== "terminated") ?null:<button className="promote">promote</button>}
+      
     </div>
   );
 };

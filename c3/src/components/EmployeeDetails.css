@@ -4,4 +4,17 @@
     align-self: center;
     justify-self: center;
     margin-top: 5vh;
+    text-align: left;
+}
+.user_details h4, span ,button{
+    margin-top: 3vh;
+    border-radius: 3px 3px;
+    border: none;
+    padding: 4px;
+}
+.fire{
+    background-color: red;
+}
+.terminated{
+    background-color: rgb(60, 177, 60);
 }
