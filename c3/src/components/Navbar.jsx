@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import './navbar.css';
 export const Navbar = () => {
+  const [status, setStatus] = useState(false)
   return (
     <div className="navbar">
       <Link className="nav-home" to="/">
@@ -13,13 +15,13 @@ export const Navbar = () => {
         Admin
       </Link>
       {/* Show Either logout or login based on auth context. DO NOT show both */}
-      <Link className="nav-logout" to="/logout">
+      {status === true?<Link className="nav-logout" to="/logout">
         Logout
-      </Link>
+      </Link>: <Link className="nav-login" to="/login">
+      Login
+    </Link>}
 
-      <Link className="nav-login" to="/login">
-        Login
-      </Link>
+     
     </div>
   );
 };
