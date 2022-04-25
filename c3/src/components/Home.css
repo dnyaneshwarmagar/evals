@@ -6,9 +6,10 @@
    
 }
 .home >div{
-    margin-left: 100px;
+    margin-left: 30vw;
     border: 1px solid grey;
     background: rgb(234, 218, 218);
+    width: 40vw;
 }
 .home >div > span{
     margin-left: 60px;
