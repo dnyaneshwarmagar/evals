@@ -1,0 +1,8 @@
+.loginform{
+    margin-top: 5vh;
+    padding: 20px;
+    border: 1px solid grey;
+}
+.loginform >input{
+    margin-left: 10px;
+}

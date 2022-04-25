@@ -1,9 +1,24 @@
 .createEmployee{
     display: flex;
     flex-direction: column;
-    width: 54vw;
+    width: 30vw;
     margin-top: 5vh;
     justify-items: center;
     align-self: center;
+    
    
+}
+.createEmployee > *{
+    border: 1px solid grey;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 3px 3px;
+}
+.createEmployee > select{
+    background-color: rgb(189, 189, 178);
+}
+.createUser{
+    background-color: rgb(24, 225, 225);
+    width: 60%;
+    align-self: center;
 }

@@ -18,6 +18,8 @@ function App() {
       <Route path="/admin" element={<Admin/>} />
       <Route path="/employees" element={<EmployeeList/>} />
       <Route path="/employees/:id" element={<EmployeeDetails/>} />
+      <Route path="/login" element={<Login/>} />
+      <Route path="/logout" element={<Logout/>} />
     </Routes>
     </div>
   );
