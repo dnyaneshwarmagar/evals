@@ -14,7 +14,7 @@ export const EmployeeList = () => {
     <div className="list_container">
       {
         list.map((e)=>(
-        <Link to={`/users/${e.id}`}>
+        <Link to={`/employees/${e.id}`}>
           <div className="employee_card">
           <img src={e.image} className="employee_image" />
           <span className="employee_name">{e.employee_name}</span>
