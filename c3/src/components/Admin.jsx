@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from "react";
+import "./Admin.css";
 
 import { Link } from "react-router-dom";
 export const Admin = () => {

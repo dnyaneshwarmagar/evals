@@ -1,0 +1,9 @@
+.createEmployee{
+    display: flex;
+    flex-direction: column;
+    width: 54vw;
+    margin-top: 5vh;
+    justify-items: center;
+    align-self: center;
+   
+}
