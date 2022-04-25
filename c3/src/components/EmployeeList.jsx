@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./EmployeeList.css"
 
 export const EmployeeList = () => {
   const [list,setList] = useState([]);

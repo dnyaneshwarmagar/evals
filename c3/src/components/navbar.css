@@ -1,0 +1,9 @@
+.navbar > *{
+    margin : 10px;
+    background-color: aquamarine;
+    border: blueviolet 1px solid;
+    border-radius: 2px 2px;
+    text-decoration: none;
+    padding: 5px;
+
+}

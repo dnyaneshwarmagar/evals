@@ -1,0 +1,25 @@
+.employee_card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid red;
+    height: 40vh;
+    text-decoration: none;
+}
+.employee_image{
+   height: 50%;
+   width: 100%;
+  
+   margin-top: 0%;
+}
+.list_container{
+    display: grid;
+    margin: 50px;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap:2%;
+    text-align: center;
+    justify-content: center;
+    /* height: 300px;
+    width: 300px; */
+}

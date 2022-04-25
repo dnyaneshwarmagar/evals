@@ -1,0 +1,15 @@
+.home{
+   display: flex;
+  flex-direction: column;
+   text-align: center;
+  justify-content:center;
+   
+}
+.home >div{
+    margin-left: 100px;
+    border: 1px solid grey;
+    background: rgb(234, 218, 218);
+}
+.home >div > span{
+    margin-left: 60px;
+}

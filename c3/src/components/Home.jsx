@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import './Home.css';
 
 export const Home = () => {
   // create statistics for user.
@@ -14,6 +15,7 @@ export const Home = () => {
   //   promoted: 0,// inc when user in promoted
   //   total_new: 0,/ / inc when a new user in created
   const [list,setList] = useState([]);
+
   useEffect(()=>{
     axios.get(`http://localhost:8080/employee`).then(({data})=>{
       setList(data)
