@@ -23,6 +23,28 @@ export const Home = () => {
    })
   },[])
 
+  let count={
+    terminated:0,
+    promoted:0,
+    new:0
+  }
+
+  list.map((e)=>{    
+    if(e.status==="terminated")
+    {
+      count.terminated++
+    }
+    if(e.title!="Team Lead" && e.title !="intern"&& e.status!=="terminated")
+    {
+      count.promoted++
+    }
+    if(e.title=="intern")
+    {
+      count.new++
+    }
+  
+  })
+
   return (
     <>
       <h3 className="welcome">Welcome To employee management system</h3>
@@ -32,13 +54,13 @@ export const Home = () => {
           Total Employees<span className="totalemp">{list.length}</span>
         </div>
         <div>
-          Total Terminated: <span className="total_terminated"></span>
+          Total Terminated: <span className="total_terminated">{count.terminated}</span>
         </div>
         <div>
-          Total Promoted: <span className="total_promoted"></span>
+          Total Promoted: <span className="total_promoted">{count.promoted}</span>
         </div>
         <div>
-          Total New: <span className="total_new"></span>
+          Total New: <span className="total_new">{count.new}</span>
         </div>
       </div>
     </>

@@ -17,7 +17,7 @@ export const EmployeeDetails = () => {
     <div className="user_details">
       <img src={user.image} className="user_image" />
       <h4 className="user_name">{user.employee_name}</h4>
-      <span className="user_salary">${user.salary}</span>
+      <span className="user_salary">$ {user.salary} </span>
       <span className="tasks">
         <li className="task"></li>
       </span>
